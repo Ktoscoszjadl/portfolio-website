@@ -2,21 +2,15 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TapButton";
-import WorkCard from "./WorkCard";
+import WorkCard from "./WorkExpierence";
+import Skills from "./Skills";
 
 const TAB_DATA = [
   {
     title: "My skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Teambuilding</li>
-        <li>Flexible and Adaptable</li>
-        <li>Active Listening</li>
-        <li>Analytical and Critical Thinking</li>
-        <li>Fast learner</li>
-        <li>Ability to Work Under Pressur</li>
-      </ul>
+      <Skills />
     ),
   },
   {
@@ -34,7 +28,7 @@ const TAB_DATA = [
     id: "work_experience",
     content: (
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
- \
+ 
       </div>
     ),
   },
@@ -62,7 +56,7 @@ const AboutSection = () => {
 
   return (
     <section className="text-white" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-1 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <div className="flex flex-row justify-start mt-8">
@@ -84,8 +78,7 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("work_experience")}
               active={tab === "work_experience"}
             >
-              {" "}
-              My work experience{" "}
+              {" "}My work experience{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}

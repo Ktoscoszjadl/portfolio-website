@@ -14,6 +14,24 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
+  {
+    id: 2,
+    title: "Object detection using ultrasound",
+    description: "Simple wehicle avoiding obstacles on its path ",
+    image: "/images/projects/2.jpg",
+    tag: ["All", "Robotics"],
+    gitUrl: "https://github.com/Ktoscoszjadl/object_detection_using_ultrasound",
+    previewUrl: "/",
+  },
+  {
+    id: 3,
+    title: "Simple games and ML",
+    description: "a collection of several simple games with ML used in them",
+    image: "/images/projects/3.png",
+    tag: ["All", "AI"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
 
 ];
 
