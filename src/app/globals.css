@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+/* work */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  /* overflow: hidden; */
+}
+.embla__slide {
+  flex: 0 0 auto;
+  width: 40%;
+  height: 300px;
+}
+/* education */
