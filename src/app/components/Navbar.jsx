@@ -18,6 +18,14 @@ const navLinks = [
     title: "Contact",
     path: "#contact",
   },
+  {
+    title: "My blog",
+    path: "/blog/personal",
+  },
+  {
+    title: "My game",
+    path: "/RumakGames",
+  },
 ];
 
 const Navbar = () => {

@@ -44,7 +44,9 @@ const HeroSection = () => {
             </button>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-transparent bg-gradient-to-br from-[#09FF87] via-[#0074D4] to-[#FFD006] hover:bg-slate-800 text-white mt-3">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                <a href="./Bartosz_Ogórek_Resume.pdf"> 
                 Download CV
+                  </a>
               </span>
             </button>
           </div>

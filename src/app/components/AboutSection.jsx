@@ -2,8 +2,10 @@
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TapButton";
-import WorkCard from "./WorkExpierence";
+import WorkCard from "./WorkExperienceInput";
 import Skills from "./Skills";
+import Education from "./Education"
+import WorkExperience from "./WorkExperience";
 
 const TAB_DATA = [
   {
@@ -17,19 +19,14 @@ const TAB_DATA = [
     title: "My education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
-      </ul>
+      <Education />
     ),
   },
   {
     title: "My work experience",
     id: "work_experience",
     content: (
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
- 
-      </div>
+      <WorkExperience />
     ),
   },
   {
